@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Езда на мототехнике</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class = "header-container">
+            <div class = "logo">
+                <h1>Езда на мотоциклах</h1>
+            </div>
+            <nav>
+                <a href="#stant">Стант</a>
+                <a href="#drift">Дрифт</a>
+                <a href="#cart">Корзина(<span id="cart-count">0</span>)</a>
+                <button id="theme-switcher">🌞</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="filter-container">
+            <div class="filter-buttons">
+                <button onclick="filterProducts('low')"class="filter-btn">Дешевые</button> <!--было filterProduct-->
+                <button onclick="filterProducts('medium')"class="filter-btn">Средние</button>
+                <button onclick="filterProducts('high')"class="filter-btn">Дорогие</button>
+            </div>
+        </div>
+        
+        <section id="stant">
+            
+            <article class="product-card">
+                <div class="product-info">
+                    <img src="xg.jpg" alt="Стант на альфе">
+                    <h2>Альфа</h2>
+                    <p class="price">60000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://ph.pinterest.com/pin/580401470750103145/"><button>Стант рама</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-info">
+                    <img src="pit.jpg" alt="Стант на пите">
+                    <h2>Питбайк</h2>
+                    <p class="price">115000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://ph.pinterest.com/pin/493003490488011588/"><button>Слики</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-info">
+                    <img src="kvadro.jpg" alt="Стант на 4 колесах">
+                    <h2>Квадроцикл</h2>
+                    <p class="price">200000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://ph.pinterest.com/pin/42573158973795848/"><button>Маленькие колеса</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-info">
+                    <img src="end.jpg" alt="Стант на эндуро">
+                    <h2>Эндуро</h2>
+                    <p class="price">200000р</p> <!--pclass было слитно-->
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://ph.pinterest.com/pin/588775351328419324/"><button>Сток</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="product-card">
+                <div class="product-info">
+                    <img src="r.jpg" alt="Стант на эндуро">
+                    <h2>Спорт</h2>
+                    <p class="price">4000000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://ph.pinterest.com/pin/1337074889268711/"><button>Сток или слики</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <h3>Дрифт</h3>
+        <section id="drift">
+            <article class="product-card">
+                 <div class="product-info">
+                    <img src="lll.jpg" alt="Стант на альфе">
+                    <h2>Альфа</h2>
+                    <p class="price">90000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://ph.pinterest.com/pin/1074530792368857390/"><button>Сток</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-info">
+                    <img src="po.jfif" alt="Стант на альфе">
+                    <h2>Питбайк</h2>
+                    <p class="price">1000000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://ph.pinterest.com/pin/866520784560852167/"><button>Сток</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                 <div class="product-info">
+                    <img src="ui.jfif" alt="Стант на альфе">
+                    <h2>Эндуро</h2>
+                    <p class="price">2000000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://in.pinterest.com/pin/535224736970157252/"><button>Сток</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-info">
+                    <img src="ir.jfif" alt="Стант на альфе">
+                    <h2>Квадроцикл</h2>
+                    <p class="price">1200000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://in.pinterest.com/pin/88875792643005969/"><button>Сток</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-info">
+                    <img src="cho.jfif" alt="Стант на альфе">
+                    <h2>Спорт</h2>
+                    <p class="price">10000000р</p>
+                    <div class="product-footer">
+                        <button class="details-btn" style = "display: none;">Подробнее</button>
+                        <a href="https://ph.pinterest.com/pin/47358233578232396/"><button>Сток</button></a>
+                        <button class="add-to-cart-btn">В корзину</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <h3>Корзина</h3>
+        <section id="cart">
+            <div id="cart-items">
+                <div class="empty-cart">Корзина пуста</div>
+            </div>
+            <div id="cart-total">
+                <p>Общая стоимость: <span id="total-price">0</span> руб.</p>
+                <button onclick="checkout()" class="checkout-btn">Оформить заказ</button>
+                <button onclick="clearCart()">Очистить корзину</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Езда на мотоциклах приветствует любителей адреналина!</p>
+        <p>Будь мото братом</p>
+        <p>© 2025 Езда на мотоциклах.Все права защищены</p>
+    </footer>
+</body>
+</html>
